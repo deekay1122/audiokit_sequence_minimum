@@ -10,9 +10,12 @@
 		531D76DA293B14720042DDFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531D76D9293B14720042DDFF /* AppDelegate.swift */; };
 		531D76DC293B14720042DDFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531D76DB293B14720042DDFF /* SceneDelegate.swift */; };
 		531D76DE293B14720042DDFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531D76DD293B14720042DDFF /* ViewController.swift */; };
-		531D76E1293B14720042DDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531D76DF293B14720042DDFF /* Main.storyboard */; };
 		531D76E3293B14730042DDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531D76E2293B14730042DDFF /* Assets.xcassets */; };
 		531D76E6293B14730042DDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531D76E4293B14730042DDFF /* LaunchScreen.storyboard */; };
+		531D76EF293B14800042DDFF /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 531D76EE293B14800042DDFF /* AudioKit */; };
+		531D76F1293B15010042DDFF /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531D76F0293B15010042DDFF /* PlaySound.swift */; };
+		531D76F3293B157D0042DDFF /* FS-Telecaster-I5-HedSound.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 531D76F2293B157D0042DDFF /* FS-Telecaster-I5-HedSound.sf2 */; };
+		531D76F5293B15DE0042DDFF /* Nice-Steinway-Lite-v3.0.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 531D76F4293B15DE0042DDFF /* Nice-Steinway-Lite-v3.0.sf2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,12 @@
 		531D76D9293B14720042DDFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531D76DB293B14720042DDFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		531D76DD293B14720042DDFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		531D76E0293B14720042DDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		531D76E2293B14730042DDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		531D76E5293B14730042DDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531D76E7293B14730042DDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531D76F0293B15010042DDFF /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		531D76F2293B157D0042DDFF /* FS-Telecaster-I5-HedSound.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FS-Telecaster-I5-HedSound.sf2"; sourceTree = "<group>"; };
+		531D76F4293B15DE0042DDFF /* Nice-Steinway-Lite-v3.0.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nice-Steinway-Lite-v3.0.sf2"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531D76EF293B14800042DDFF /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		531D76CD293B14720042DDFF = {
 			isa = PBXGroup;
 			children = (
+				531D76F4293B15DE0042DDFF /* Nice-Steinway-Lite-v3.0.sf2 */,
+				531D76F2293B157D0042DDFF /* FS-Telecaster-I5-HedSound.sf2 */,
 				531D76D8293B14720042DDFF /* AudioKitSequenceExample */,
 				531D76D7293B14720042DDFF /* Products */,
 			);
@@ -59,7 +67,7 @@
 				531D76D9293B14720042DDFF /* AppDelegate.swift */,
 				531D76DB293B14720042DDFF /* SceneDelegate.swift */,
 				531D76DD293B14720042DDFF /* ViewController.swift */,
-				531D76DF293B14720042DDFF /* Main.storyboard */,
+				531D76F0293B15010042DDFF /* PlaySound.swift */,
 				531D76E2293B14730042DDFF /* Assets.xcassets */,
 				531D76E4293B14730042DDFF /* LaunchScreen.storyboard */,
 				531D76E7293B14730042DDFF /* Info.plist */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = AudioKitSequenceExample;
+			packageProductDependencies = (
+				531D76EE293B14800042DDFF /* AudioKit */,
+			);
 			productName = AudioKitSequenceExample;
 			productReference = 531D76D6293B14720042DDFF /* AudioKitSequenceExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 531D76CD293B14720042DDFF;
+			packageReferences = (
+				531D76ED293B14800042DDFF /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 531D76D7293B14720042DDFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531D76F5293B15DE0042DDFF /* Nice-Steinway-Lite-v3.0.sf2 in Resources */,
+				531D76F3293B157D0042DDFF /* FS-Telecaster-I5-HedSound.sf2 in Resources */,
 				531D76E6293B14730042DDFF /* LaunchScreen.storyboard in Resources */,
 				531D76E3293B14730042DDFF /* Assets.xcassets in Resources */,
-				531D76E1293B14720042DDFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				531D76DE293B14720042DDFF /* ViewController.swift in Sources */,
+				531D76F1293B15010042DDFF /* PlaySound.swift in Sources */,
 				531D76DA293B14720042DDFF /* AppDelegate.swift in Sources */,
 				531D76DC293B14720042DDFF /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		531D76DF293B14720042DDFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				531D76E0293B14720042DDFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		531D76E4293B14730042DDFF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = AudioKitSequenceExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = AudioKitSequenceExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		531D76ED293B14800042DDFF /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		531D76EE293B14800042DDFF /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 531D76ED293B14800042DDFF /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 531D76CE293B14720042DDFF /* Project object */;
 }
